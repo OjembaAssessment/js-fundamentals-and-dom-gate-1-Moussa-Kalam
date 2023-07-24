@@ -639,6 +639,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1294,6 +1298,11 @@ video {
   justify-items: stretch;
 }
 
+.gap-x-32 {
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -1303,19 +1312,14 @@ video {
   row-gap: 2.5rem;
 }
 
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+.gap-x-64 {
+  -moz-column-gap: 16rem;
+       column-gap: 16rem;
 }
 
-.gap-x-32 {
-  -moz-column-gap: 8rem;
-       column-gap: 8rem;
-}
-
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+.gap-x-72 {
+  -moz-column-gap: 18rem;
+       column-gap: 18rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1684,10 +1688,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1871,17 +1871,9 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .px-5 {
@@ -1894,24 +1886,29 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.px-48 {
-  padding-left: 12rem;
-  padding-right: 12rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .text-left {
@@ -1970,14 +1967,24 @@ video {
   vertical-align: super;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -2056,14 +2063,14 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .underline {
