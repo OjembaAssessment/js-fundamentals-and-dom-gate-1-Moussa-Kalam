@@ -39,8 +39,18 @@ const top5 = [];
 
 topWords.map((word) => top5.push(word[0]));
 
-// wordsArr.forEach((word) => {
-//   if (top5.includes(word)) {
-//     word.innerHTML = `<span>${word}</span>`;
-//   }
-// });
+for (let i = 0; i < wordsArr.length; i++) {
+  if (top5.includes(wordsArr[i])) {
+    wordsArr[i] = wordsArr[i].toUpperCase();
+  }
+}
+
+paragraph.textContent = wordsArr.join(" ");
+
+let paragraphText = paragraph.textContent;
+
+for (let i = 0; i < paragraphText.length; i++) {
+  if (paragraphText[i] === paragraphText[i].toUpperCase()) {
+    paragraphText[i].style.backgroundColor = "green";
+  }
+}
